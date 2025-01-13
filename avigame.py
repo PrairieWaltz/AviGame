@@ -102,7 +102,7 @@ while question_list < 10:
 
     print('')
     q8 = int(input('What percentage of your body\'s oxygen does the brain use? '))
-    if q8 == '20':
+    if q8 == 20:
         score += 1
         print(f'Correct! Your score is now {score}/10')
     else:
@@ -126,8 +126,7 @@ while question_list < 10:
     else:
         print('Sorry thats wrong!')
     sleep(1)
-    print(game_over)
+    print(Fore.BLUE + game_over)
     break
 
-
-print(f"Your final score was {score}/10")
+print(Fore.CYAN + f"Your final score was {score}/10")
